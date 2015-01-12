@@ -131,7 +131,12 @@ set  noexpandtab
 set  ts=4
 set  sw=4
 
-" Don’t forget to ‘touch ~/.vimbackup’ for this to actually work…
+"set number
+set  autoindent
+set  smartindent
+"set expandtab
+
+" Don’t forget to ‘mkdir ~/.vimbackup/’ for this to actually work…
 set  backupdir=~/.vimbackup,.
 set  directory=~/.vimbackup,.
 set  undodir  =~/.vimbackup,.
