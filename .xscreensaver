@@ -1,11 +1,11 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.32 for user on Mon Jul  6 20:02:06 2015.
+# Written by xscreensaver-demo 5.32 for user on Tue Jul 7 02:30:07 2015.
 # http://www.jwz.org/xscreensaver/
 
-timeout:	0:01:00
-cycle:		0:01:00
-lock:		False
-lockTimeout:	0:00:00
+timeout:	0:10:00
+cycle:		0:05:00
+lock:		True
+lockTimeout:	0:30:00
 passwdTimeout:	0:00:30
 visualID:	default
 installColormap:    True
@@ -29,13 +29,13 @@ dpmsQuickOff:	False
 dpmsStandby:	2:00:00
 dpmsSuspend:	2:00:00
 dpmsOff:	4:00:00
-grabDesktopImages:  True
-grabVideoFrames:    True
+grabDesktopImages:  False
+grabVideoFrames:    False
 chooseRandomImages: True
-imageDirectory:	/home/user/pic
+imageDirectory:	/usr/share/wallpapers
 
 mode:		random
-selected:	144
+selected:	195
 
 textMode:	program
 textLiteral:	XScreenSaver
@@ -98,7 +98,7 @@ programs:								      \
 				bsod -root -atari -bsd -sparclinux	    \n\
   GL: 				bubble3d -root				    \n\
   GL: 				cage -root				    \n\
--				crystal -root				    \n\
+-				crystal -root -no-cell			    \n\
 				cynosure -root				    \n\
 				discrete -root				    \n\
 				distort -root				    \n\
@@ -112,7 +112,8 @@ programs:								      \
 - GL: 				sonar -root -ping simulation		    \n\
   GL: 				stairs -root				    \n\
 				truchet -root				    \n\
-				vidwhacker -root -directory /home/user/pic  \n\
+				vidwhacker -root -directory		      \
+				  /usr/share/wallpapers			    \n\
 -				blaster -root				    \n\
 				bumps -root				    \n\
 				ccurve -root				    \n\
