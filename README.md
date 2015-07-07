@@ -42,7 +42,7 @@ git push
 ```
 
 And next time I am at my other machine, in order to fetch the latest copy of my
-`.vimrc`, all I would have to to is:
+`.vimrc`, all I would have to do is:
 
 ```
 cd code/dotfiles
