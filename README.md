@@ -17,7 +17,7 @@ cd code
 git clone https://github.com/bengudro/dotfiles
 ```
 
-On both machines I now have a clone of my dotfiles repo at `~/code/dotfiles`
+On both machines I now have a clone of my `dotfiles` repo at `~/code/dotfiles`
 
 Also, on both machines, I *remove* the relevant dotfiles and replace them with
 *symlinks* to my local git repo.
@@ -50,11 +50,11 @@ git pull
 ```
 
 This works thanks to symlinks.  My `~/.vimrc` does not actually exist anymore
-in its expected location, because I deleted it and replaced with a *symlink* to
-my local repo.  This avoids having to copy files over every time I `git pull`.
+in its expected location, because I deleted it and replaced it with a *symlink*
+to my local repo.  This avoids having to copy files over every time I do a `git
+pull`.
 
-Don’t know if my procedure makes sense, or if it is super safe, but it works!
-:)
+Don’t know if my procedure makes sense or if it is super safe, but it works! :)
 
 Also, in order for this to work I need the same ssh key on both machines, for
 obvious reasons.
