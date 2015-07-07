@@ -35,12 +35,12 @@ machines, I simply have to:
 
 ```
 cd ~/code/dotfiles/
-git add .vimrc
-git commit -m "Change .vimrc"
+git add *
+git commit -m 'Change .vimrc'
 git push
 ```
 
-And next I am at my other machine, in order to fetch the latest copy of my
+And next time I am at my other machine, in order to fetch the latest copy of my
 .vimrc, all I would have to to is:
 
 ```
