@@ -5,123 +5,181 @@
 
 ! Common
 
-#define S_yellow          #b58900
-#define S_orange          #cb4b16
-#define S_red             #dc322f
-#define S_magenta         #d33682
-#define S_violet          #6c71c4
-#define S_blue            #268bd2
-#define S_cyan            #2aa198
-!#define S_green          #859900 ! original, experimental is below:
-#define S_green           #719e07
+#define S_yellow	#b58900
+#define S_orange	#cb4b16
+#define S_red	#dc322f
+#define S_magenta	#d33682
+#define S_violet	#6c71c4
+#define S_blue	#268bd2
+#define S_cyan	#2aa198
+!#define S_green	#859900 ! original, experimental below:
+#define S_green	#719e07
 
 ! Dark
 
-!#define S_base03         #002b36 ! original, sublimetext-style is below:
-!#define S_base02         #073642 ! original, sublimetext-style is below:
-#define S_base03          #042029
-#define S_base02          #0a2933
-#define S_base01          #586e75
-#define S_base00          #657b83
-#define S_base0           #839496
-#define S_base1           #93a1a1
-#define S_base2           #eee8d5
-#define S_base3           #fdf6e3
+!#define S_base03	#002b36 ! original, sublimetext-style below:
+!#define S_base02	#073642 ! original, sublimetext-style below:
+!#define S_base03	#042029
+!#define S_base02	#0a2933
+#define S_base03	#1c1c1c
+#define S_base02	#262626
+#define S_base01	#586e75
+#define S_base00	#657b83
+#define S_base0	#839496
+#define S_base1	#93a1a1
+#define S_base2	#eee8d5
+#define S_base3	#fdf6e3
 
 
 ! Light
 
-!#define S_base03         #fdf6e3
-!#define S_base02         #eee8d5
-!#define S_base01         #93a1a1
-!#define S_base00         #839496
-!#define S_base0          #657b83
-!#define S_base1          #586e75
-!#define S_base2          #073642
-!#define S_base3          #002b36
+!#define S_base03	#fdf6e3
+!#define S_base02	#eee8d5
+!#define S_base01	#93a1a1
+!#define S_base00	#839496
+!#define S_base0	#657b83
+!#define S_base1	#586e75
+!#define S_base2	#073642
+!#define S_base3	#002b36
 
 
 ! To only apply colors to your terminal, for example, prefix
 ! the color assignment statement with its name. Example:
 !
-! URxvt*background:       S_base03
+! URxvt*background:	S_base03
 
-URxvt*background:              S_base03
-URxvt*foreground:              S_base0
-URxvt*fading:                  40
-URxvt*fadeColor:               S_base03
-URxvt*cursorColor:             S_base1
-URxvt*pointerColorBackground:  S_base01
-URxvt*pointerColorForeground:  S_base1
+URxvt*background:	S_base03
+URxvt*foreground:	S_base0
+!URxvt*fading:	40
+URxvt*fading:	10
+!URxvt*fadeColor:	S_base03
+URxvt*cursorColor:	S_base1
+URxvt*pointerColorBackground:	S_base01
+URxvt*pointerColorForeground:	S_base1
 
-URxvt*color0:                  S_base02
-URxvt*color1:                  S_red
-URxvt*color2:                  S_green
-URxvt*color3:                  S_yellow
-URxvt*color4:                  S_blue
-URxvt*color5:                  S_magenta
-URxvt*color6:                  S_cyan
-URxvt*color7:                  S_base2
-URxvt*color9:                  S_orange
-URxvt*color8:                  S_base03
-URxvt*color10:                 S_base01
-URxvt*color11:                 S_base00
-URxvt*color12:                 S_base0
-URxvt*color13:                 S_violet
-URxvt*color14:                 S_base1
-URxvt*color15:                 S_base3
+! Getting solarized colors right with urxvt, st, tmux and vim
+! https://bbs.archlinux.org/viewtopic.php?id=164108
+URxvt*intensityStyles:	false
+
+URxvt*color0:	S_base02
+URxvt*color1:	S_red
+URxvt*color2:	S_green
+URxvt*color3:	S_yellow
+URxvt*color4:	S_blue
+URxvt*color5:	S_magenta
+URxvt*color6:	S_cyan
+URxvt*color7:	S_base2
+URxvt*color9:	S_orange
+URxvt*color8:	S_base03
+URxvt*color10:	S_base01
+URxvt*color11:	S_base00
+URxvt*color12:	S_base0
+URxvt*color13:	S_violet
+URxvt*color14:	S_base1
+URxvt*color15:	S_base3
 
 ! wiki.archlinux.org/index.php/Urxvt#Scrollbar
-URxvt*scrollBar:          false
+URxvt*scrollBar:	false
 
+! https://askubuntu.com/questions/22419/how-do-i-make-urxvt-render-xft-fonts
+!-- Xft settings -- !
+!Xft.dpi:	96
+Xft.antialias:	true
+Xft.rgba:	rgb
+Xft.hinting:	true
+Xft.hintstyle:	hintslight
+
+!! http://www.saltycrane.com/blog/2009/11/how-make-urxvt-look-gnome-terminal/
+!URxvt*font: xft:Monospace:pixelsize=12
+URxvt*letterSpace:	-1
+! https://askubuntu.com/questions/22419/how-do-i-make-urxvt-render-xft-fonts
+URxvt*font:	xft:Ubuntu Mono derivative Powerline:pixelsize=16
+!URxvt*font: xft:Clean:pixelsize=8
 ! unix.stackexchange.com/posts/38982/revisions
-URxvt*boldFont:
+URxvt*boldFont:	xft:Ubuntu Mono derivative Powerline:bold:pixelsize=16
+URxvt*italicFont:	xft:Ubuntu Mono derivative Powerline:italic:pixelsize=16
+URxvt*boldItalicFont:	xft:Ubuntu Mono derivative Powerline:bold:italic:pixelsize=16
+!URxvt*boldFont: xft:Clean:pixelsize=8
 
-URxvt*geometry:           80x81
+!URxvt*geometry:	80x81
+URxvt*geometry:	113x44
 
 !xcalc-----------------------------------------------------------------------
 
-xcalc*geometry:                        200x275
-xcalc.ti.bevel.background:             #111111
-xcalc.ti.bevel.screen.background:      #000000
-xcalc.ti.bevel.screen.DEG.background:  #000000
-xcalc.ti.bevel.screen.DEG.foreground:  LightSeaGreen
-xcalc.ti.bevel.screen.GRAD.background: #000000
-xcalc.ti.bevel.screen.GRAD.foreground: LightSeaGreen
-xcalc.ti.bevel.screen.RAD.background:  #000000
-xcalc.ti.bevel.screen.RAD.foreground:  LightSeaGreen
-xcalc.ti.bevel.screen.INV.background:  #000000
-xcalc.ti.bevel.screen.INV.foreground:  Red
-xcalc.ti.bevel.screen.LCD.background:  #000000
-xcalc.ti.bevel.screen.LCD.foreground:  LightSeaGreen
-xcalc.ti.bevel.screen.LCD.shadowWidth: 0
-xcalc.ti.bevel.screen.M.background:    #000000
-xcalc.ti.bevel.screen.M.foreground:    LightSeaGreen
-xcalc.ti.bevel.screen.P.background:    #000000
-xcalc.ti.bevel.screen.P.foreground:    Yellow
-xcalc.ti.Command.foreground:  White
-xcalc.ti.Command.background:  #777777
-xcalc.ti.button5.background:  Orange3
-xcalc.ti.button19.background: #611161
-xcalc.ti.button18.background: #611161
-xcalc.ti.button20.background: #611111
-!uncomment to change label on division button
-xcalc.ti.button20.label:      /
-xcalc.ti.button25.background: #722222
-xcalc.ti.button30.background: #833333
-xcalc.ti.button35.background: #944444
-xcalc.ti.button40.background: #a55555
-xcalc.ti.button22.background: #222262
-xcalc.ti.button23.background: #222262
-xcalc.ti.button24.background: #222272
-xcalc.ti.button27.background: #333373
-xcalc.ti.button28.background: #333373
-xcalc.ti.button29.background: #333373
-xcalc.ti.button32.background: #444484
-xcalc.ti.button33.background: #444484
-xcalc.ti.button34.background: #444484
-xcalc.ti.button37.background: #555595
-xcalc.ti.button38.background: #555595
-xcalc.ti.button39.background: #555595
-XCalc*Cursor:                 hand2
-XCalc*ShapeStyle:             rectangle
+xcalc*geometry:	200x275
+xcalc.ti.bevel.background:	#111111
+xcalc.ti.bevel.screen.background:	#000000
+xcalc.ti.bevel.screen.DEG.background:	#000000
+xcalc.ti.bevel.screen.DEG.foreground:	LightSeaGreen
+xcalc.ti.bevel.screen.GRAD.background:	#000000
+xcalc.ti.bevel.screen.GRAD.foreground:	LightSeaGreen
+xcalc.ti.bevel.screen.RAD.background:	#000000
+xcalc.ti.bevel.screen.RAD.foreground:	LightSeaGreen
+xcalc.ti.bevel.screen.INV.background:	#000000
+xcalc.ti.bevel.screen.INV.foreground:	Red
+xcalc.ti.bevel.screen.LCD.background:	#000000
+xcalc.ti.bevel.screen.LCD.foreground:	LightSeaGreen
+xcalc.ti.bevel.screen.LCD.shadowWidth:	0
+xcalc.ti.bevel.screen.M.background:	#000000
+xcalc.ti.bevel.screen.M.foreground:	LightSeaGreen
+xcalc.ti.bevel.screen.P.background:	#000000
+xcalc.ti.bevel.screen.P.foreground:	Yellow
+xcalc.ti.Command.foreground:	White
+xcalc.ti.Command.background:	#777777
+xcalc.ti.button5.background:	Orange3
+xcalc.ti.button19.background:	#611161
+xcalc.ti.button18.background:	#611161
+xcalc.ti.button20.background:	#611111
+!!uncomment to change label on division button
+!xcalc.ti.button20.label:	/
+xcalc.ti.button25.background:	#722222
+xcalc.ti.button30.background:	#833333
+xcalc.ti.button35.background:	#944444
+xcalc.ti.button40.background:	#a55555
+xcalc.ti.button22.background:	#222262
+xcalc.ti.button23.background:	#222262
+xcalc.ti.button24.background:	#222272
+xcalc.ti.button27.background:	#333373
+xcalc.ti.button28.background:	#333373
+xcalc.ti.button29.background:	#333373
+xcalc.ti.button32.background:	#444484
+xcalc.ti.button33.background:	#444484
+xcalc.ti.button34.background:	#444484
+xcalc.ti.button37.background:	#555595
+xcalc.ti.button38.background:	#555595
+xcalc.ti.button39.background:	#555595
+XCalc*Cursor:	hand2
+XCalc*ShapeStyle:	rectangle
+
+! xscreensaver ---------------------------------------------------------------
+! https://wiki.archlinux.org/index.php/X_resources#xscreensaver_theming
+
+!font settings
+xscreensaver.Dialog.headingFont:	-*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:	-*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:	-*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:	-*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:	-*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:	-*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:	-*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:	#111110
+xscreensaver.Dialog.background:	#111111
+xscreensaver.Dialog.topShadowColor:	#111111
+xscreensaver.Dialog.bottomShadowColor:	#111111
+xscreensaver.Dialog.Button.foreground:	#111111
+xscreensaver.Dialog.Button.background:	#111111
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:	#111111
+xscreensaver.Dialog.text.background:	#ffffff
+xscreensaver.Dialog.internalBorderWidth:	24
+xscreensaver.Dialog.borderWidth:	0
+xscreensaver.Dialog.shadowThickness:	2
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:	#ff0000
+xscreensaver.passwd.thermometer.background:	#000000
+xscreensaver.passwd.thermometer.width:	8
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:	%I:%M%P %a %b %d, %Y
+
+# vim:ts=44 sw=44

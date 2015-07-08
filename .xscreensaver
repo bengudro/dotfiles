@@ -1,9 +1,9 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.32 for user on Wed Jul  8 00:21:11 2015.
+# Written by xscreensaver-demo 5.32 for user on Wed Jul  8 17:23:57 2015.
 # http://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
-cycle:		0:10:00
+cycle:		0:05:00
 lock:		True
 lockTimeout:	1:00:00
 passwdTimeout:	0:00:30
@@ -48,7 +48,7 @@ programs:								      \
 				electricsheep --root 1			    \n\
   GL: 				superquadrics -root			    \n\
 				attraction -root			    \n\
--				blitspin -root				    \n\
+				blitspin -root				    \n\
 -				greynetic -root				    \n\
 				helix -root				    \n\
 				hopalong -root				    \n\
@@ -60,31 +60,31 @@ programs:								      \
 				rorschach -root -ysymmetry		    \n\
 				decayscreen -root			    \n\
 				flame -root				    \n\
--				halo -root				    \n\
+				halo -root				    \n\
 				slidescreen -root -ibw 1		    \n\
 				pedal -root				    \n\
 				bouboule -root				    \n\
--				braid -root				    \n\
+				braid -root				    \n\
 				coral -root				    \n\
 -				deco -root				    \n\
 				drift -root				    \n\
 				fadeplot -root				    \n\
 				galaxy -root				    \n\
 				goop -root				    \n\
--				grav -root				    \n\
+				grav -root				    \n\
 				ifs -root				    \n\
   GL: 				jigsaw -root				    \n\
 				julia -root				    \n\
 				kaleidescope -root			    \n\
   GL: 				moebius -root				    \n\
--				moire -root				    \n\
+				moire -root				    \n\
   GL: 				morph3d -root				    \n\
 -				mountain -root				    \n\
 				munch -root				    \n\
 				penrose -root				    \n\
   GL: 				pipes -root				    \n\
--				rd-bomb -root				    \n\
-- GL: 				rubik -root				    \n\
+				rd-bomb -root				    \n\
+  GL: 				rubik -root				    \n\
 -				sierpinski -root			    \n\
 				slip -root				    \n\
   GL: 				sproingies -root			    \n\
@@ -98,7 +98,7 @@ programs:								      \
 				bsod -root -atari -bsd -sparclinux	    \n\
   GL: 				bubble3d -root				    \n\
   GL: 				cage -root				    \n\
--				crystal -root -no-cell			    \n\
+-				crystal -root				    \n\
 				cynosure -root				    \n\
 				discrete -root				    \n\
 				distort -root				    \n\
@@ -108,8 +108,8 @@ programs:								      \
 				interference -root			    \n\
 				kumppa -root				    \n\
   GL: 				lament -root				    \n\
--				moire2 -root				    \n\
-- GL: 				sonar -root -ping simulation		    \n\
+				moire2 -root				    \n\
+  GL: 				sonar -root -ping simulation		    \n\
   GL: 				stairs -root				    \n\
 				truchet -root				    \n\
 				vidwhacker -root -directory		      \
@@ -117,18 +117,18 @@ programs:								      \
 -				blaster -root				    \n\
 				bumps -root				    \n\
 				ccurve -root				    \n\
--				compass -root				    \n\
+				compass -root				    \n\
 				deluxe -root				    \n\
 				demon -root				    \n\
 - GL: 				extrusion -root				    \n\
--				loop -root				    \n\
+				loop -root				    \n\
 -				penetrate -root				    \n\
 				petri -root				    \n\
 				phosphor -root				    \n\
-- GL: 				pulsar -root				    \n\
+  GL: 				pulsar -root				    \n\
 				ripples -root -stir -oily		    \n\
 				shadebobs -root				    \n\
-- GL: 				sierpinski3d -root			    \n\
+  GL: 				sierpinski3d -root			    \n\
 				spotlight -root				    \n\
 				squiral -root				    \n\
 				wander -root				    \n\
@@ -145,7 +145,7 @@ programs:								      \
   GL: 				engine -root				    \n\
   GL: 				flipscreen3d -root			    \n\
   GL: 				gltext -root -program fortune		    \n\
-- GL: 				menger -root				    \n\
+  GL: 				menger -root				    \n\
   GL: 				molecule -root -no-labels -no-titles	    \n\
 				rotzoomer -root -mode sweep		    \n\
 				speedmine -root -worm -no-terrain	      \
@@ -175,9 +175,9 @@ programs:								      \
 				thornbird -root				    \n\
 				twang -root -border-width 0		    \n\
   GL: 				antspotlight -root			    \n\
--				apple2 -root				    \n\
+				apple2 -root				    \n\
   GL: 				atunnel -root -light			    \n\
--				barcode -root				    \n\
+				barcode -root				    \n\
   GL: 				blinkbox -root				    \n\
   GL: 				blocktube -root				    \n\
   GL: 				bouncingcow -root			    \n\
@@ -197,13 +197,13 @@ programs:								      \
   GL: 				mirrorblob -root			    \n\
 				piecewise -root				    \n\
   GL: 				polytopes -root				    \n\
--				pong -root				    \n\
+				pong -root -noise 0			    \n\
 				popsquares -root			    \n\
   GL: 				surfaces -root				    \n\
 -				xanalogtv -root				    \n\
 				abstractile -root			    \n\
 				anemotaxis -root			    \n\
-- GL: 				antinspect -root			    \n\
+  GL: 				antinspect -root -shadows		    \n\
 				fireworkx -root				    \n\
 -				fuzzyflakes -root			    \n\
 				interaggregate -root			    \n\
@@ -235,7 +235,7 @@ programs:								      \
   GL: 				gears -root				    \n\
   GL: 				glcells -root				    \n\
   GL: 				lockward -root				    \n\
--				m6502 -root				    \n\
+				m6502 -root				    \n\
   GL: 				moebiusgears -root			    \n\
 - GL: 				voronoi -root				    \n\
   GL: 				hypnowheel -root			    \n\
