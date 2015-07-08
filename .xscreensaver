@@ -1,11 +1,11 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.32 for user on Tue Jul 7 02:30:07 2015.
+# Written by xscreensaver-demo 5.32 for user on Wed Jul  8 00:21:11 2015.
 # http://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
-cycle:		0:05:00
+cycle:		0:10:00
 lock:		True
-lockTimeout:	0:30:00
+lockTimeout:	1:00:00
 passwdTimeout:	0:00:30
 visualID:	default
 installColormap:    True
@@ -270,3 +270,4 @@ xinputExtensionDev: False
 overlayStderr:	True
 authWarningSlack:   20
 
+# vim:ts=8 sw=8
