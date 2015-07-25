@@ -1,0 +1,8 @@
+# File $HOME/.config/youtube-dl/config (on *nix)
+# and  %APPDATA%/youtube-dl/config.txt (on Windows)
+# See http://rg3.github.io/youtube-dl/
+# and https://www.archlinux.org/packages/community/any/youtube-dl/
+
+--ignore-errors --retries "infinite" --output "%(title)s · %(upload_date)s · %(extractor)s · %(id)s/%(title)s · %(upload_date)s · %(extractor)s · %(id)s.%(ext)s" --write-description --write-info-json --write-all-thumbnail --no-call-home --no-check-certificate --prefer-insecure --user-agent "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36" --write-sub --write-auto-sub --sub-lang "en" --audio-format "best" --audio-quality "0" --embed-subs --add-metadata
+
+# vim:tw=0 ts=8 sw=8 wrap lbr
